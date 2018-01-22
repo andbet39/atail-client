@@ -37,8 +37,7 @@ stream.on('data', function(line) {
  
     client.send(mess, 0, mess.length, PORT, HOST, function(err, bytes) {
         if (err) throw err;
-        console.log('UDP message sent to ' + HOST +':'+ PORT);
-    });
+     });
   });
 
 process.stdin.on('end', function() {
